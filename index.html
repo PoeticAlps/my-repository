@@ -33,7 +33,11 @@
   .card {
     background: var(--card); border: 1px solid var(--border); border-radius: 12px;
     padding: 20px; display: flex; flex-direction: column; gap: 10px;
-    transition: transform .15s ease, border-color .15s ease;
+    transition: transform .15s ease, border-color .15s ease; overflow: hidden;
+  }
+  .card .shot {
+    display: block; width: calc(100% + 40px); margin: -20px -20px 10px;
+    height: 150px; object-fit: cover; border-bottom: 1px solid var(--border);
   }
   .card:hover { transform: translateY(-3px); border-color: var(--accent); }
   .card .top { display: flex; justify-content: space-between; align-items: center; }
@@ -72,24 +76,28 @@
   <h2 class="section">🌐 在线体验</h2>
   <div class="grid">
     <div class="card">
+      <img class="shot" src="screenshots/h5-games.jpg" alt="H5 游戏厅" loading="lazy">
       <div class="top"><h3>H5 小游戏合集</h3><span class="badge live">在线</span></div>
       <p>贪吃蛇、跳一跳、开心消消乐、合成大师、FPS 射击、三国杀等 8 款纯前端游戏，手机电脑即点即玩，带游戏大厅导航。</p>
       <div class="tags"><span class="tag">HTML5</span><span class="tag">Canvas</span><span class="tag">游戏</span></div>
       <div class="acts"><a href="https://poeticalps.github.io/h5-games/" target="_blank" rel="noopener">▶ 开始玩</a><a href="https://github.com/PoeticAlps/h5-games" target="_blank" rel="noopener">源码</a></div>
     </div>
     <div class="card">
+      <img class="shot" src="screenshots/yuanmingyuan.jpg" alt="重生·圆明园 3D 场景" loading="lazy">
       <div class="top"><h3>重生·圆明园</h3><span class="badge live">在线</span></div>
       <p>AI 数字文化遗产 3D 重建，第 19 届全国三维数字化创新应用大赛（3D 大赛）参赛作品。程序化建模 + 交互式场景漫游。</p>
       <div class="tags"><span class="tag">Three.js</span><span class="tag">3D 重建</span><span class="tag">数字遗产</span></div>
       <div class="acts"><a href="https://poeticalps.github.io/--3d/" target="_blank" rel="noopener">▶ 进入场景</a><a href="https://github.com/PoeticAlps/--3d" target="_blank" rel="noopener">源码</a></div>
     </div>
     <div class="card">
+      <img class="shot" src="screenshots/art-design.jpg" alt="圆明园艺术设计实景模型" loading="lazy">
       <div class="top"><h3>圆明园 · 艺术设计</h3><span class="badge live">在线</span></div>
       <p>圆明园主题交互设计页：九州清晏、大水法、方壶胜境、正大光明四大景区可视化与详情展示。</p>
       <div class="tags"><span class="tag">Three.js</span><span class="tag">可视化</span></div>
       <div class="acts"><a href="https://poeticalps.github.io/art-design/" target="_blank" rel="noopener">▶ 查看</a><a href="https://github.com/PoeticAlps/art-design" target="_blank" rel="noopener">源码</a></div>
     </div>
     <div class="card">
+      <img class="shot" src="screenshots/agnes.jpg" alt="教学系统原型集" loading="lazy">
       <div class="top"><h3>教学系统原型集</h3><span class="badge live">在线</span></div>
       <p>多智能体学习系统、景区 AI 导游"小桂"、知声语音知识图谱等交互式教学原型，移动端适配。</p>
       <div class="tags"><span class="tag">原型</span><span class="tag">教育</span></div>
